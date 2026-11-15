@@ -130,6 +130,7 @@
         <button onclick="showPage('about')" class="nav-btn px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-joyPink hover:bg-pink-50 transition">Tentang Kami</button>
         <button onclick="showPage('pesen')" class="nav-btn px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-joyPink hover:bg-pink-50 transition">Form Pesen</button>
         <button onclick="showPage('kontak')" class="nav-btn px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-joyPink hover:bg-pink-50 transition">Kontak CS</button>
+        <button onclick="showPage('resource')" class="nav-btn px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-joyPink hover:bg-pink-50 transition">Resource</button>
       </nav>
 
       <!-- Cart Button & Mobile Menu Trigger -->
@@ -161,6 +162,7 @@
       <button onclick="showPage('about'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-pink-50 hover:text-joyPink">Tentang Kami</button>
       <button onclick="showPage('pesen'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-pink-50 hover:text-joyPink">Form Pesen</button>
       <button onclick="showPage('kontak'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-pink-50 hover:text-joyPink">Kontak CS</button>
+      <button onclick="showPage('resource'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-pink-50 hover:text-joyPink">Resource</button>
     </div>
   </header>
 
@@ -216,7 +218,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <!-- Card Kategori 1: Sekolah (Menggunakan bg1.jpeg) -->
+          <!-- Card Kategori 1: Sekolah -->
           <div onclick="showPage('produk', 'sekolah')" class="group cursor-pointer rounded-3xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center transform hover:-translate-y-2 relative overflow-hidden bg-cover bg-center border-3 border-dashed border-sky-200 hover:border-joyBlue" style="background-image: url('bg1.jpeg');">
             <div class="absolute inset-0 bg-white/70 backdrop-blur-[1px]"></div>
             <div class="relative z-10">
@@ -229,7 +231,7 @@
             </div>
           </div>
 
-          <!-- Card Kategori 2: Olahraga (Menggunakan bg2.jpeg) -->
+          <!-- Card Kategori 2: Olahraga -->
           <div onclick="showPage('produk', 'olahraga')" class="group cursor-pointer rounded-3xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center transform hover:-translate-y-2 relative overflow-hidden bg-cover bg-center border-3 border-dashed border-emerald-200 hover:border-joyGreen text-white" style="background-image: url('bg2.jpeg');">
             <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
             <div class="relative z-10">
@@ -242,7 +244,7 @@
             </div>
           </div>
 
-          <!-- Card Kategori 3: Casual Bag (Menggunakan bg3.jpeg) -->
+          <!-- Card Kategori 3: Casual Bag -->
           <div onclick="showPage('produk', 'casual')" class="group cursor-pointer rounded-3xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center transform hover:-translate-y-2 relative overflow-hidden bg-cover bg-center border-3 border-dashed border-orange-200 hover:border-joyOrange" style="background-image: url('bg3.jpeg');">
             <div class="absolute inset-0 bg-white/80 backdrop-blur-[1px]"></div>
             <div class="relative z-10">
@@ -255,50 +257,6 @@
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <!-- KEUNGGULAN SECTION -->
-      <div class="bg-white py-16 border-y border-pink-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-xl mx-auto mb-12">
-            <h2 class="font-fredoka text-3xl font-bold text-gray-800">Kenapa Harus Joybagshop?</h2>
-            <p class="text-gray-500 text-sm mt-1">Dibuat oleh siswa berprestasi</p>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="p-6 bg-pink-50/60 rounded-2xl text-center space-y-3 border border-pink-100">
-              <div class="w-12 h-12 rounded-xl bg-joyPink text-white flex items-center justify-center mx-auto text-xl shadow-md">
-                <i class="fa-solid fa-palette"></i>
-              </div>
-              <h4 class="font-bold text-gray-800">Desain Original</h4>
-              <p class="text-xs text-gray-500">Model eksklusif & warna pastel estetik mengikuti tren anak muda.</p>
-            </div>
-
-            <div class="p-6 bg-blue-50/60 rounded-2xl text-center space-y-3 border border-blue-100">
-              <div class="w-12 h-12 rounded-xl bg-joyBlue text-white flex items-center justify-center mx-auto text-xl shadow-md">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <h4 class="font-bold text-gray-800">Bahan Berkualitas</h4>
-              <p class="text-xs text-gray-500">Jahitan rapi, kain polyester water-resistant tahan lama.</p>
-            </div>
-
-            <div class="p-6 bg-green-50/60 rounded-2xl text-center space-y-3 border border-green-100">
-              <div class="w-12 h-12 rounded-xl bg-joyGreen text-white flex items-center justify-center mx-auto text-xl shadow-md">
-                <i class="fa-solid fa-tags"></i>
-              </div>
-              <h4 class="font-bold text-gray-800">Harga Kantong Pelajar</h4>
-              <p class="text-xs text-gray-500">Ramah untuk dompet siswa tanpa mengorbankan mutu.</p>
-            </div>
-
-            <div class="p-6 bg-purple-50/60 rounded-2xl text-center space-y-3 border border-purple-100">
-              <div class="w-12 h-12 rounded-xl bg-joyPurple text-white flex items-center justify-center mx-auto text-xl shadow-md">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-              <h4 class="font-bold text-gray-800">Dukung Project Siswa</h4>
-              <p class="text-xs text-gray-500">Setiap pembelian membantu pengembangan wirausaha siswa muda.</p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -355,7 +313,7 @@
     <!-- PAGE: PRODUK / KATALOG -->
     <section id="page-produk" class="page-section hidden">
       
-      <!-- Catalog Banner (Menggunakan bg4.jpeg) -->
+      <!-- Catalog Banner -->
       <div id="catalog-banner" class="py-16 px-4 text-center rounded-b-3xl shadow-md transition-all relative overflow-hidden bg-cover bg-center" style="background-image: url('bg4.jpeg');">
         <div class="absolute inset-0 bg-pink-900/40 backdrop-blur-[2px]"></div>
         <div class="relative z-10 text-white">
@@ -396,48 +354,43 @@
     <!-- PAGE: TENTANG KAMI -->
     <section id="page-about" class="page-section hidden">
       <div class="bg-gradient-to-r from-pink-100 via-purple-100 to-pink-50 py-12 px-4 text-center rounded-b-3xl">
-        <h1 class="font-fredoka text-3xl sm:text-4xl font-bold text-joyPink mb-2">Tentang Joybagshop ✨</h1>
-        <p class="text-gray-600 text-sm sm:text-base max-w-lg mx-auto">Wadah Kreativitas & Inovasi Kewirausahaan Siswa Muda Indonesia</p>
+        <h1 class="font-fredoka text-3xl sm:text-4xl font-bold text-joyPink mb-2">Tentang Joybagshop</h1>
+        <p class="text-gray-600 text-sm sm:text-base max-w-lg mx-auto">website kreatif siswa</p>
       </div>
 
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
         
-        <!-- Story Section -->
+        <!-- Tulisan Penilaian Asas Informatika Semester Gasal (Center) -->
+        <div class="bg-gradient-to-r from-pink-50 via-purple-50 to-pink-50 border-2 border-dashed border-pink-200 p-6 sm:p-8 rounded-3xl text-center shadow-sm">
+          <p class="font-fredoka text-lg sm:text-2xl font-bold text-joyPink tracking-wide">
+            website ini dibuat untuk memenuhi penilaian asas informatika semester gasal
+          </p>
+        </div>
+
+        <!-- Informasi Alamat & Kontak -->
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-pink-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div class="space-y-4">
-            <span class="text-xs font-bold text-joyPink bg-pink-50 px-3 py-1 rounded-full uppercase">Kisah Kami</span>
-            <h2 class="font-fredoka text-2xl sm:text-3xl font-bold text-gray-800">Berawal dari Tugas Project Sekolah</h2>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Joybagshop didirikan pada tahun 2026 sebagai wujud nyata karya project individu siswa. Kami berawal dari ide sederhana: menciptakan produk tas fungsional yang unik, berdesain ceria, dengan harga terjangkau bagi teman-teman pelajar.
+            <span class="text-xs font-bold text-joyPink bg-pink-50 px-3 py-1 rounded-full uppercase">Informasi & Alamat</span>
+            <h2 class="font-fredoka text-2xl sm:text-3xl font-bold text-gray-800">Joybagshop Official</h2>
+            <p class="text-gray-600 text-sm leading-relaxed flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-joyPink"></i> Jalan Kiwi Barat, Bandung, Jawa Barat
             </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Dengan bimbingan guru dan semangat kemandirian, Joybagshop kini berkembang menjadi brand tas independen yang mengedepankan kualitas jahitan, estetika warna pastel, serta dampak positif bagi lingkungan sekolah.
+            <p class="text-gray-600 text-sm leading-relaxed flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-joyPurple"></i> joybagshop.official@gmail.com
+            </p>
+            <p class="text-gray-600 text-sm leading-relaxed flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-green-500"></i> +62 812-3456-7890
             </p>
           </div>
           <div class="bg-gradient-to-tr from-pink-200 to-purple-200 rounded-2xl p-6 text-center">
-            <i class="fa-solid fa-graduation-cap text-6xl text-joyPink mb-4"></i>
-            <h3 class="font-fredoka text-xl font-bold text-gray-800">Project Kewirausahaan Siswa</h3>
-            <p class="text-xs text-gray-600 mt-2">Mendidik karakter kreatif, tangguh, dan mandiri sejak usia sekolah.</p>
-          </div>
-        </div>
-
-        <!-- Vision Mission -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-sky-50/70 p-6 rounded-2xl border border-sky-100 space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-joyBlue text-white flex items-center justify-center text-lg"><i class="fa-solid fa-eye"></i></div>
-            <h3 class="font-fredoka text-xl font-bold text-joyBlue">Visi Kami</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">Menjadi brand tas lokal pilihan utama generasi muda yang menginspirasi kreativitas siswa serta memberikan solusi tas aesthetic berkualitas tinggi.</p>
-          </div>
-
-          <div class="bg-emerald-50/70 p-6 rounded-2xl border border-emerald-100 space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-joyGreen text-white flex items-center justify-center text-lg"><i class="fa-solid fa-bullseye"></i></div>
-            <h3 class="font-fredoka text-xl font-bold text-joyGreen">Misi Kami</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">Menghasilkan produk tas yang awet & lucu, memberikan pelayanan ramah untuk pembeli, serta membuktikan bahwa siswa mampu berkarya.</p>
+            <i class="fa-solid fa-store text-6xl text-joyPink mb-4"></i>
+            <h3 class="font-fredoka text-xl font-bold text-gray-800">Pusat Koleksi Tas Kreatif</h3>
+            <p class="text-xs text-gray-600 mt-2">Menghadirkan produk tas berkualitas, stylish, dan ramah kantong pelajar.</p>
           </div>
         </div>
 
         <!-- Pembuat Tugas Individu -->
-        <div class="text-center space-y-8">
+        <div class="text-center space-y-6">
           <h2 class="font-fredoka text-2xl sm:text-3xl font-bold text-gray-800">Project Siswa</h2>
           <div class="flex justify-center">
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-pink-100 text-center max-w-xs w-full">
@@ -653,6 +606,158 @@
       </div>
     </section>
 
+    <!-- PAGE: RESOURCE / SUMBER FOTO -->
+    <section id="page-resource" class="page-section hidden">
+      <div class="bg-gradient-to-r from-purple-100 via-pink-100 to-sky-100 py-12 px-4 text-center rounded-b-3xl">
+        <h1 class="font-fredoka text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Resource & Sumber Foto Tas</h1>
+        <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Daftar tautan referensi sumber gambar dan aset foto produk yang digunakan dalam Project Siswa Joybagshop.</p>
+      </div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-pink-100 space-y-6">
+          <h3 class="font-fredoka text-xl font-bold text-joyPink flex items-center gap-2 border-b border-pink-100 pb-4">
+            <i class="fa-solid fa-link"></i> Daftar Tautan Sumber Foto Katalog Tas
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Item Resource 1 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-joyBlue">Tas Sekolah</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">LILY BAG</h4>
+              </div>
+              <a href="https://share.google/muuHkOZD5HztkHjCv" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/muuHkOZD5HztkHjCv
+              </a>
+            </div>
+
+            <!-- Item Resource 2 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-joyBlue">Tas Sekolah</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">OMAR BAG</h4>
+              </div>
+              <a href="https://share.google/U2RE50kGPradR1rzc" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/U2RE50kGPradR1rzc
+              </a>
+            </div>
+
+            <!-- Item Resource 3 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-joyBlue">Tas Sekolah</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">GLEE BAG</h4>
+              </div>
+              <a href="https://share.google/h7bQ45YdmdwhwCHhA" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/h7bQ45YdmdwhwCHhA
+              </a>
+            </div>
+
+            <!-- Item Resource 4 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-joyBlue">Tas Sekolah</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">ROSA BAG</h4>
+              </div>
+              <a href="https://share.google/ECbNHEkNgSzRuphvR" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/ECbNHEkNgSzRuphvR
+              </a>
+            </div>
+
+            <!-- Item Resource 5 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-joyGreen">Tas Olahraga</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">FLUFFGYM BAG</h4>
+              </div>
+              <a href="https://share.google/uXUKRusQ35jzumX27" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/uXUKRusQ35jzumX27
+              </a>
+            </div>
+
+            <!-- Item Resource 6 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-joyGreen">Tas Olahraga</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">FIZZY BAG</h4>
+              </div>
+              <a href="https://share.google/OLih4pRcA0QpXU8CE" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/OLih4pRcA0QpXU8CE
+              </a>
+            </div>
+
+            <!-- Item Resource 7 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-joyGreen">Tas Olahraga</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">HAZEL GYM BAG</h4>
+              </div>
+              <a href="https://share.google/MqQzbrolDM9CoK2jX" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/MqQzbrolDM9CoK2jX
+              </a>
+            </div>
+
+            <!-- Item Resource 8 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-joyGreen">Tas Olahraga</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">MUSE BAG</h4>
+              </div>
+              <a href="https://share.google/GNWE9o1Wa2WZC10uF" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/GNWE9o1Wa2WZC10uF
+              </a>
+            </div>
+
+            <!-- Item Resource 9 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-orange-100 text-joyOrange">Casual Bag</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">SIFIA TOTE BAG</h4>
+              </div>
+              <a href="https://share.google/tal01VSCRElA0bz53" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/tal01VSCRElA0bz53
+              </a>
+            </div>
+
+            <!-- Item Resource 10 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-orange-100 text-joyOrange">Casual Bag</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">JOLLY MINI POUCH</h4>
+              </div>
+              <a href="https://share.google/IZuq6aZQdFjQDaPyI" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/IZuq6aZQdFjQDaPyI
+              </a>
+            </div>
+
+            <!-- Item Resource 11 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-orange-100 text-joyOrange">Casual Bag</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">AUREL SHOULDER BAG</h4>
+              </div>
+              <a href="https://share.google/6bByGvaj49c3Krp9D" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/6bByGvaj49c3Krp9D
+              </a>
+            </div>
+
+            <!-- Item Resource 12 -->
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-orange-100 text-joyOrange">Casual Bag</span>
+                <h4 class="font-bold text-sm text-gray-800 mt-1">BOOP COCOA BAG</h4>
+              </div>
+              <a href="https://share.google/vDMZO9wysJK0kXkDo" target="_blank" class="text-xs text-joyPink hover:underline flex items-center gap-1 font-medium break-all">
+                <i class="fa-solid fa-external-link-alt text-[10px]"></i> https://share.google/vDMZO9wysJK0kXkDo
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- MODAL DETAIL PRODUK -->
@@ -754,7 +859,7 @@
         textColor: 'text-joyBlue',
         badgeBg: 'bg-sky-100 text-joyBlue',
         svgType: 'backpack',
-        image: 'tas-sekolah-1.jpg'
+        image: 'tas sekolah-1.1.jpg'
       },
       {
         id: 'ts-2',
@@ -847,7 +952,7 @@
         textColor: 'text-joyGreen',
         badgeBg: 'bg-emerald-100 text-joyGreen',
         svgType: 'sling',
-        image: 'tas-olahraga-4.1.jpeg'
+        image: 'tas-olahraga-4.1.JPEG'
       },
 
       // Casual Bag (Category: casual)
@@ -1013,7 +1118,6 @@
       // Update Header Text based on category
       const title = document.getElementById('catalog-title');
       const sub = document.getElementById('catalog-subtitle');
-      const banner = document.getElementById('catalog-banner');
 
       if (cat === 'sekolah') {
         title.innerHTML = " Koleksi Tas Sekolah";
@@ -1064,7 +1168,7 @@
         return `
           <path d="M50 80C50 50 70 30 100 30C130 30 150 50 150 80V160C150 170 140 180 130 180H70C60 180 50 170 50 160V80Z" fill="#FF85A1" stroke="#FFFFFF" stroke-width="6"/>
           <path d="M70 40C70 25 80 15 100 15C120 15 130 25 130 40" stroke="#FF5277" stroke-width="8" stroke-linecap="round"/>
-          <path d="M65 110C65 95 75 90 100 90C125 90 135 95 135 110V155C135 160 130 165 125 165H75C70 165 65 160 65 165V110Z" fill="#FFC2D1" stroke="#FFFFFF" stroke-width="4"/>
+          <path d="M65 110C65 95 75 90 100 90C125 90 135 95 135 110V155C135 160 130 165 125 165H75C70 165 65 160 65 160V110Z" fill="#FFC2D1" stroke="#FFFFFF" stroke-width="4"/>
         `;
       }
     }
@@ -1257,7 +1361,7 @@
 
       // WhatsApp Message Formatting
       const waNumber = "6281234567890"; // Ganti dengan nomor WhatsApp Toko
-      const message = `Halo CS *Joybagshop*!Saya mau pesen tas hasil project siswa nih:%0A%0A` +
+      const message = `Halo CS *Joybagshop*! Saya mau pesen tas hasil project siswa nih:%0A%0A` +
         ` *DETAIL PESANAN:*%0A` +
         `- Produk: *${product.name}*%0A` +
         `- Varian Warna: ${color}%0A` +
@@ -1271,7 +1375,7 @@
         `- Ekspedisi: ${courier}%0A` +
         `- Metode Bayar: ${payment}%0A%0A` +
         ` *TOTAL BIAYA:* *${totalText}*%0A%0A` +
-        `Mohon segera diproses ya kak, terima kasih! s`;
+        `Mohon segera diproses ya kak, terima kasih!`;
 
       window.open(`https://wa.me/${waNumber}?text=${message}`, '_blank');
     }
